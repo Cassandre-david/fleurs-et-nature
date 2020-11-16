@@ -450,5 +450,23 @@
         width: 300px;
     }
     
+    .dates h4 {
+        padding: 0;
     }
+
+    .dates h3, .dates p{
+        padding: 10px;} 
+
+ .carrousel-infos {
+            margin-right: 0;
     
+    }
+
+.infos-ateliers{
+    background-image: none;
+}
+.carrousel-infos {
+    margin-right: 0;
+}
+
+}
