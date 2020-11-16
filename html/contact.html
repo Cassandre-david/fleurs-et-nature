@@ -24,12 +24,12 @@
         </div>
     
         
-         <section id="hero" class="align-center">
+        <section id="hero" class="align-center">
             <header>
                 <img class="logo-pages" src="../img/logo-blanc.gif" alt="">
-                <nav class="navbar">
+                <nav class="navbar" id="Mynav">
+                    <a href="#home" class="active"></a>
                     <a href="../index.html">Accueil</a>
-                    <a href="fleurs-et-thes.html">Fleurs et thés</a>
                     <a href="ateliers.html">Ateliers</a>
                     <div class="dropdown">
                       <button class="dropbtn">Réalisations
@@ -42,8 +42,10 @@
                       </div>
                     </div>
                     <a href="contact.html">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
                 </nav>
-           </header>
 
 
 
@@ -140,6 +142,15 @@
         </div>
 
         </footer>
-
+        <script type="text/javascript">
+            function myFunction(){
+             var x = document.getElementById("Mynav");
+           if (x.className === "navbar") {
+             x.className += " responsive";
+           } else {
+             x.className = "navbar";
+           }
+           }
+         </script>
 </body>
 </html>
