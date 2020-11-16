@@ -14,11 +14,12 @@
     <script src="https://kit.fontawesome.com/2f0f6273c6.js" crossorigin="anonymous"></script>
     <!-- CSS pour tout le monde -->
     <link href="css/style.css" rel="stylesheet">
-    <!-- CSS pour ceux qui ont une résolution inférieure à 480px -->
-    <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/smallscreen.css" type="text/css">
-    <!-- CSS pour ceux qui ont une résolution inférieure à 1600px --> 
-    <link rel="stylesheet" media="screen and (min-width:481px and max-width:1570px)"href="css/mediumscreen.css" type="text/css">
-
+    <!-- CSS pour ceux qui ont une résolution inférieure à 640px -->
+    <link rel="stylesheet" media="screen and (max-width: 640px)" href="css/smallscreen.css" type="text/css">
+    <link rel="stylesheet" media="screen and (max-width: 785px)" href="css/smallscreen.css" type="text/css">
+    <link rel="stylesheet" media="screen and (max-width: 1085px)" href="css/smallscreen.css" type="text/css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="accueil">
@@ -29,11 +30,15 @@
     
         
          <section id="hero-accueil" class="align-center">
-            <header class="header-accueil">
+            <header>
+          
                 <img class="logo-pages" src="img/logo-blanc.gif" alt="">
-                    <nav class="navbar">
+                  
+               
+            <!--nav menu burger-->
+                    <nav class="navbar" id="Mynav">
+                        <a href="#home" class="active"></a>
                         <a href="index.html">Accueil</a>
-                        <a href="html/fleurs-et-thes.html">Fleurs et thés</a>
                         <a href="html/ateliers.html">Ateliers</a>
                         <div class="dropdown">
                           <button class="dropbtn">Réalisations
@@ -46,7 +51,11 @@
                           </div>
                         </div>
                         <a href="html/contact.html">Contact</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                          <i class="fa fa-bars"></i>
+                        </a>
                     </nav>
+            <!--fin nav menu burger-->
            </header>
 
             <div class="banniere">
@@ -120,5 +129,16 @@
 
         </footer>
 
+        <script type="text/javascript">
+           function myFunction(){
+            var x = document.getElementById("Mynav");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+          }
+        </script>
+     
 </body>
 </html>
