@@ -1,8 +1,0 @@
-/* Si la résolution est inférieure à 1570px de large, charge les propriétés CSS ci-dessous */
-
-.header-accueil {
-    margin-right: 350px;}
-
-.img-dernieres-creations {
-    padding: 30px;
-    width: 350px;}

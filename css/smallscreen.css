@@ -1,457 +1,454 @@
-/* Si la résolution est inférieure à 480px de large, charge les propriétés CSS ci-dessous */
+/* Si la résolution est inférieure à 640px de large, charge les propriétés CSS ci-dessous */
 
 /* toutes les pages */
 
 /* Nav */
-
-  .navbar {
-    background-color: rgb(0, 0, 0);
-    margin-top: 30px;
-    overflow: visible;
-    margin-right:15px;
-}
-
-  .navbar a{
-    padding: 14px 10px;
-    font-size: 10.6px;
-  }
-
-  .dropdown .dropbtn {
-    padding: 14px 30px 14px 8px;
-    margin-top: 30px;
-  }
-  
-  /* boutons de la nav */
-  .navbar a, .dropbtn {
-    float: center;
-    text-align: center;
-    padding: 14px 8px;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  
-  /* bouton sous menus */
-  .dropdown {
-    font-size: 10.6px;
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* bouton du sous menus  */
-  .dropdown .dropbtn {
-    font-size: 10.6px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 30px 14px 8px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
-  
-  /* couleur grise du hover nav */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(77, 77, 77);
-  }
-  
-  /* sous-menus, cachés par defaut */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    min-width: 100px;
-    z-index: 1;
-  }
-  
-  /* catégories sous menus */
-  .dropdown-content a {
-    float: none;
-    color: rgb(255, 255, 255);
-    padding: 12px 10px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  /* couleur hover des sous menus */
-  .dropdown-content a:hover {
-    background-color: rgb(77, 77, 77);
-  }
-  
-  /* pour montrer les sous- menu en hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  body{
-    margin:0;
-    padding:0;
-}
-
-  .logo-pages {
-    width: 60px;
-    height: 60px;
-    margin: 10px;
-}
-
-footer{
-    height: 100px;
-}
-
-footer p{
-    font-size: 12px;
-    line-height: 12px;
-    margin:5px;
-}
-
-.colonne-1, .colonne-2, .colonne-3, .colonne-4{
-    display: flex;
-    flex-direction: column;
-    padding:3px;
-    line-height: 10px;
-    margin-bottom:10px;
-}
-
-
-
-.colonne-1{
-    display: none;
-
-}
-.reseaux{
-    display: flex;
-    flex-direction: row;
-    margin-left: 20px;
-}
-
-.instagram, .facebook{
-    padding: 3px;
-    font-size: 30px;
-}
-
-h4{
-    font-size:24px;
-    padding: 7px;  
-}
-
-footer a{
-    padding:1px;  
-}
-
-#backontop i {
-    font-size: 2em;
-}
-
-/* page accueil */
-
-/* HEADER */
-
-h1 {
-    font-size: 7em;
-}
-
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-accueil{
-    display: flex;
-    align-items: center;
-}
-
-
-#backontop-contact i {
-    font-size: 2em;
-
-}
-
-.title{
-    height: 130px;
-}
-
-.title h2{
-    padding: 35px;
-}
-
-/* Pour le header accueil */
-
-#hero-accueil{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-image: url('../css/images/img-banniere.gif');
-    background-size: cover;
-    background-position: center;
-    height: 830px;
-    padding: 0 0 50px 0;
-    box-shadow: inset 0 0 0 100%  rgba(0, 0, 0, 0.6);
-}
-
-
-.presentation{
-    display: flex;
-    flex-direction: column;
-    background-image: url('../img/motif-floral-fond-rose.gif');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50%;
-    align-items: center;
-    padding: 0 30px 45px 30px;
-}
-
-h2 {
-    font-size: 3em;
-}
-
-.presentation h2 {
-    padding: 40px;
-    font-size: 50px;
-    padding: 20px 40px 20px 40px;
-}
-
-.texte-presentation{
-    padding: 10px;
-}
-
-.image-boutique {
-    width: 350px;
-    padding: 10px 20px 25px 10px;
-}
-
-.fa-angle-down {
-    font-size: 2em;
-}
-
-/* Mes dernières créations */
-
-.creations{
-    padding: 30px;
-}
-
-.img-dernieres-creations {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: space-around;
-    margin-top: 10px;
-}
-
-.img {
-    padding: 10px;
-    width: 190px;
-}
-
-/* page fleurs et thés */
-
-.saveurs {
-    margin: 0;
-    padding: 0 110px;
-}
-
-.saveurs span{
-    color: #f7d0de;
-}
-
-.fa-seedling{
-    color: #f7d0de;
-}
-
-.espace-salon-de-the{
-    background-image: url(../css/images/tasse.png);
-    background-size: 70%;
-    height:800px;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    padding: 0;  
-}
-
-.espace-salon-de-the p {
-    padding: 10px;
-    line-height: 15px;
-}
-
-/* page ateliers */
-
-.infos-ateliers h3{
-    font-size:30px;
-    padding:20px;
-}
-
-.paragraphes {
-    padding: 10px 20px 0 20px;
-}
-
-.carrousel-infos {
-    flex-direction: column-reverse;
-    display: flex;
-    align-items: center;
-    margin-right: 0;
-    padding-top: 0;
-    padding:0 20px;
-}
-
-.dates {
-    padding: 0 20px 30px 20px;
-}
-
-.dates h3, .dates p {
-    padding: 10px;
-}
-
-div#slider {
-    max-width: 400px;
-}
-
-.infos-ateliers span, .infos-ateliers p {
-    font-size: 17px;
-}
-
-
-.infos-ateliers {
-    background-image: none;
-}
-
-/* page realisations */
-
-.galerie h3 {
-    text-align: left;
-    padding: 10px 0 10px 20px;
-    font-size: 40px;
-}
-
-.galerie-bouquets img, .galerie-bijoux img, .galerie-creations img{
-    width: 180px;
-    padding:10px;   
-}
-
-#categorie-bouquets img, #categorie-bijoux img, #categorie-creations img{
-    padding:10px;
-}
-
-/* page contact */ 
-
-iframe{
-    height: 150px;
-}
-
-hr{
-    width: 100px;
-    height: 0.5px;
-    margin: 20px 10px 10px 10px;
-}
-
-.infos-boutique {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: black;
-    color: #eee;
-    height: 500px;
-    font-size: 18px;
-    line-height: 25px;
-    align-items: center;
-    padding:0;
-    margin:0;
-}
-
-.infos-boutique h3{
-    font-size: 35px;
-}
-
-.coordonnees{
-    margin-bottom: 25px;
-}
-
-.labels {
-    font-size: 20px;
-    line-height: 130px;
-    margin-left: 0;
-    margin-top: 74px;
-    line-height: 87px;
-}
-
-input {
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 0 10px 10px 0;
-    text-align: left;
-    border: 0;
-    margin: 30px 0 20px 0;
-    width: 200px;
-    color: rgb(104, 103, 103);
-}
-
-#nom {
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 0 10px 10px 0;
-    text-align: left;
-    border: 0;
-    margin: 90px 0 20px 0;
-    width: 200px;
-    color: rgb(104, 103, 103);
-}
-
-textarea {
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 0 10px 10px 0;
-    height: 105px;
-    text-align: left;
-    margin: 30px 0 20px 0;
-    width: 205px;
-}
-
-.ok-button {
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 0 10px 10px 0;
-    width: 110px;
-    margin: 20px 0 30px 0;
-}
-
-.separation {
-    height: 650px;
-    margin: 70px 0 0 20px;
-}
-
-.form{
-    height: 760px
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width:785px){
+    .navbar {
+        margin-top: 30px;
+        overflow: hidden;
+        margin-right:15px;
+    }
+    
+    
+      /* boutons de la nav */
+    .navbar a, .dropbtn {
+        font-size: 10.6px;
+        padding: 14px 8px;
+     
+      }
+      
+     
+      /* bouton sous menus */
+      
+      
+      /* bouton du sous menus  */
+      .dropdown .dropbtn {
+        font-size: 10.6px;
+        padding: 14px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+       
+      }
+      
+      
+      /* sous-menus, cachés par defaut */
+      .dropdown-content {
+        display: none;
+       
+      }
+      
+      
+      /* catégories sous menus */
+      .dropdown-content a {
+        color: rgb(255, 255, 255);
+        padding: 12px 10px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      
+      /* couleur hover des sous menus */
+      .dropdown-content a:hover {
+        background-color: rgb(77, 77, 77);
+      }
+      
+    
+      
+    
+      body{
+        margin:0;
+        padding:0;
+    }
+    
+      .logo-pages {
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+        
+    }
+    
+    footer{
+        height: 100px;
+    }
+    
+    footer p{
+        font-size: 12px;
+        line-height: 12px;
+        margin:5px;
+    }
+    
+    .colonne-1, .colonne-2, .colonne-3, .colonne-4{
+        display: flex;
+        flex-direction: column;
+        padding:3px;
+        line-height: 10px;
+        margin-bottom:10px;
+    }
+    
+    
+    
+    .colonne-1{
+        display: none;
+    
+    }
+    .reseaux{
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+    }
+    
+    .instagram, .facebook{
+        padding: 3px;
+        font-size: 30px;
+    }
+    
+    h4{
+        font-size:24px;
+         
+    }
+    
+    footer a{
+        padding:1px;  
+    }
+    
+    #backontop i {
+        font-size: 2em;
+    }
+    
+    /* page accueil */
+    
+    /* HEADER */
+    
+    h1 {
+        font-size: 7em;
+    }
+    
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-accueil{
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    #backontop-contact i {
+        font-size: 2em;
+    
+    }
+    
+    .title{
+        height: 130px;
+    }
+    
+    .title h2{
+        padding: 35px;
+    }
+    
+    /* Pour le header accueil */
+    
+    #hero-accueil{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url('../css/images/img-banniere.gif');
+        background-size: cover;
+        background-position: center;
+        height: 830px;
+        padding: 0 0 50px 0;
+        box-shadow: inset 0 0 0 100%  rgba(0, 0, 0, 0.6);
+    }
+    
+    
+    .presentation{
+        display: flex;
+        flex-direction: column;
+        background-image: url('../img/motif-floral-fond-rose.gif');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50%;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    h2 {
+        font-size: 3em;
+    }
+    
+    .presentation h2 {
+        padding: 40px;
+        font-size: 50px;
+        padding: 20px 40px 20px 40px;
+    }
+    
+    .texte-presentation{
+        padding: 10px;
+    }
+    
+    .image-boutique {
+        width: 350px;
+        
+    }
+    
+    .fa-angle-down {
+        font-size: 2em;
+    }
+    
+    /* Mes dernières créations */
+    
+    .creations{
+        padding: 30px;
+    }
+    
+    .img-dernieres-creations {
+        display: flex;
+        
+        flex-wrap: wrap;
+        align-content: space-around;
+        margin-top: 10px;
+    }
+    
+    .img {
+        padding: 10px;
+        width: 190px;
+    }
+    
+    /* page fleurs et thés */
+    
+    .saveurs {
+        margin: 0;
+        padding: 0 110px;
+    }
+    
+    .saveurs span{
+        color: #f7d0de;
+    }
+    
+    .fa-seedling{
+        color: #f7d0de;
+    }
+    
+    .espace-salon-de-the{
+        background-image: url(../css/images/tasse.png);
+        background-size: 70%;
+        height:800px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding: 0;  
+    }
+    
+    .espace-salon-de-the p {
+        padding: 10px;
+        line-height: 15px;
+    }
+    
+    /* page ateliers */
+    
+    .infos-ateliers h3{
+        font-size:30px;
+        padding:20px;
+    }
+    
+    .paragraphes {
+        padding: 10px 20px 0 20px;
+    }
+    
+    .carrousel-infos {
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        padding-top: 0;
+        padding:0 20px;
+    }
+    
+    .dates {
+        padding: 0 20px 30px 20px;
+    }
+    
+    .dates h3, .dates p {
+        padding: 10px;
+    }
+    
+    div#slider {
+        max-width: 400px;
+    }
+    
+    .infos-ateliers span, .infos-ateliers p {
+        font-size: 17px;
+    }
+    
+    
+    .infos-ateliers {
+        background-image: none;
+    }
+    
+    /* page realisations */
+    
+    .galerie h3 {
+        text-align: left;
+        padding: 10px 0 10px 20px;
+        font-size: 40px;
+    }
+    
+    .galerie-bouquets img, .galerie-bijoux img, .galerie-creations img{
+        width: 180px;
+        padding:10px;   
+    }
+    
+    #categorie-bouquets img, #categorie-bijoux img, #categorie-creations img{
+        padding:10px;
+    }
+    
+    /* page contact */ 
+    
+    iframe{
+        height: 150px;
+    }
+    
+    hr{
+        width: 100px;
+        height: 0.5px;
+        margin: 20px 10px 10px 10px;
+    }
+    
+    .infos-boutique {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: black;
+        color: #eee;
+        height: 500px;
+        font-size: 18px;
+        line-height: 25px;
+        align-items: center;
+        padding:0;
+        margin:0;
+    }
+    
+    .infos-boutique h3{
+        font-size: 35px;
+    }
+    
+    .coordonnees{
+        margin-bottom: 25px;
+    }
+    
+    .labels {
+        font-size: 20px;
+        line-height: 130px;
+        margin-left: 0;
+        margin-top: 74px;
+        line-height: 87px;
+    }
+    
+    input {
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 0 10px 10px 0;
+        text-align: left;
+        border: 0;
+        margin: 30px 0 20px 0;
+        width: 200px;
+        color: rgb(104, 103, 103);
+    }
+    
+    #nom {
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 0 10px 10px 0;
+        text-align: left;
+        border: 0;
+        margin: 90px 0 20px 0;
+        width: 200px;
+        color: rgb(104, 103, 103);
+    }
+    
+    textarea {
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 0 10px 10px 0;
+        height: 105px;
+        text-align: left;
+        margin: 30px 0 20px 0;
+        width: 205px;
+    }
+    
+    .ok-button {
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 0 10px 10px 0;
+        width: 110px;
+        margin: 20px 0 30px 0;
+    }
+    
+    .separation {
+        height: 650px;
+        margin: 70px 0 0 20px;
+    }
+    
+    .form{
+        height: 760px;
+    }
+    
+    }
+    
+    
+    /*menu burger*/
+    
+    /* When the screen is less than 785 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+    @media screen and (max-width: 785px) {
+        .navbar a:not(:first-child) {display: none;}
+        .navbar a.icon {
+          float: right;
+          display: block;
+        }
+      }
+      
+      /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+      @media screen and (max-width:785px) {
+        .navbar.responsive {position: relative;}
+        .navbar.responsive a.icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .navbar.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+    
+      }
+    
+    /*fin menu burger*/
+    
+    
+    
+    @media screen and (max-width: 1085px){
+    .presentation h2 {
+            padding: 10px 0;
+        }
+    
+    .presentation{
+        padding: 100px 20px;
+    }
+    
+    
+    .image-boutique{
+        width: 23em;
+    }
+    
+    .img{
+        width: 300px;
+    }
+    
+    }
+    
