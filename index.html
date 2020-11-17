@@ -36,12 +36,13 @@
                   
                
             <!--nav menu burger-->
-                    <nav class="navbar" id="Mynav">
-                        <a href="#home" class="active"></a>
+                <nav class="topnav" id="myTopnav">
+                    <nav class="topnav" id="myTopnav">
+                        <a href="#" class="active"></a>
                         <a href="index.html">Accueil</a>
                         <a href="html/ateliers.html">Ateliers</a>
                         <div class="dropdown">
-                          <button class="dropbtn">Réalisations
+                          <button class="dropbtn">Réalisations 
                             <i class="fa fa-caret-down"></i>
                           </button>
                           <div class="dropdown-content">
@@ -49,12 +50,10 @@
                             <a href="html/realisations.html#categorie-bijoux">Bijoux floraux</a>
                             <a href="html/realisations.html#categorie-creations">Créations florales</a>
                           </div>
-                        </div>
+                        </div> 
                         <a href="html/contact.html">Contact</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                          <i class="fa fa-bars"></i>
-                        </a>
-                    </nav>
+                        <a href="javascript:void(0);" style="font-size:17px;" class="icon" onclick="myFunction()">&#9776;</a>
+                      </nav>
             <!--fin nav menu burger-->
            </header>
 
@@ -130,17 +129,16 @@
         </div>
 
         </footer>
-
-        <script type="text/javascript">
-           function myFunction(){
-            var x = document.getElementById("Mynav");
-          if (x.className === "navbar") {
-            x.className += " responsive";
-          } else {
-            x.className = "navbar";
-          }
-          }
-        </script>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
      
 </body>
 </html>
