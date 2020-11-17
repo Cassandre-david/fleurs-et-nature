@@ -7,7 +7,7 @@
     padding: 30px 0px;}
 
 footer h4{
-font-size:20px;
+font-size:30px;
     }
 }
 
@@ -149,10 +149,7 @@ font-size:20px;
         font-size: 30px;
     }
     
-    h4{
-        font-size:24px;
-         
-    }
+   
     
     footer a{
         padding:1px;  
@@ -472,9 +469,8 @@ font-size:20px;
     font-size:19px;
 }
 
-footer h4{
-    font-size: 30px;
-}
+
+
 
 .galerie-bouquets img, .galerie-bijoux img, .galerie-creations img{
     width: 360px;
