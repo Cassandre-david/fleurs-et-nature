@@ -31,6 +31,7 @@ font-size:30px;
       display: none;
     }
     .topnav a.icon {
+    color: white;
       float: right;
       display: block;
       padding: 5px 10px;
@@ -439,7 +440,7 @@ footer p{
 }
 
 .dates span{
-    color: #f5afc8;
+    color: #f3cfdb;
 }
 
 #backontop i {
